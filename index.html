@@ -1,117 +1,188 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ff2baa">
-<title>Mike Denman | Creative Portfolio</title>
-<meta name="description" content="Mike Denman's portfolio of games, film, video, advertising, books, art, brands, and live work.">
-<link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mike Denman | Filmmaker, Marketer, Creative Strategist</title>
+  <meta name="description" content="Mike Denman works across film, digital marketing, advertising, video game marketing, real estate advertising, books, art, and live projects.">
+  <meta name="theme-color" content="#05080a">
+  <meta property="og:title" content="Mike Denman | Filmmaker, Marketer, Creative Strategist">
+  <meta property="og:description" content="Ideas, stories, brands, worlds, people. Film, marketing, advertising, games, books, art, and live projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-<canvas id="sky" aria-hidden="true"></canvas>
-<div class="scanlines" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
 
-<header class="site-header">
-  <a class="site-name" href="#top">MIKEDENMAN.ONLINE</a>
-  <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="menu">MENU</button>
-  <nav id="menu" class="menu">
-    <a href="#work">Work</a>
-    <a href="#media">Video</a>
-    <a href="#other">Books / Art / Live</a>
-    <a href="#contact">Contact</a>
-    <button id="customizeOpen" class="nav-button">Customize</button>
-  </nav>
-</header>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Mike Denman Online home">
+      <span>MIKE</span><strong>DENMAN</strong><em>.ONLINE</em>
+    </a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-panel" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#books">Books & Audio</a>
+      <a href="#experience">Experience</a>
+      <a href="#clients">Clients</a>
+      <a data-link="linktree" href="https://linktr.ee/mikedenman" target="_blank" rel="noopener noreferrer">Contact</a>
+    </nav>
+  </header>
 
-<main id="top">
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">STORIES · IDEAS · CAMPAIGNS · CREATIVE WORK</p>
-    <h1><span>MIKE</span><br>DENMAN</h1>
-    <p class="title-line">Filmmaker, marketer, strategist, and creator.</p>
-    <p class="sub-line">Games, film, advertising, digital media, books, art, and live storytelling.</p>
-    <p class="intro">A growing archive of projects built across entertainment, advertising, publishing, art, and independent creative work.</p>
-    <div class="actions">
-      <a class="button pink" href="#work">ENTER ARCHIVE</a>
-      <a class="button cyan" href="#contact">WORK WITH MIKE</a>
-    </div>
-  </div>
-  <div class="hero-art" aria-hidden="true">
-    <div class="pixel-sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="city"></div><div class="cloud c1"></div><div class="cloud c2"></div>
-  </div>
-</section>
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-left-rail" aria-hidden="true">
+        <span>IDEAS</span><span>STORIES</span><span>BRANDS</span><span>WORLDS</span><span>PEOPLE</span>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">CREATIVE IDEAS. PEOPLE. PLACES. PIXELS. ALWAYS FORWARD.</p>
+        <h1><span>MIKE</span><br>DENMAN</h1>
+        <p class="hero-role">FILMMAKER, MARKETER, AND<br>CREATIVE STRATEGIST.</p>
+        <p class="hero-intro">I work across film, digital marketing, advertising, video game marketing, real estate advertising, books, art, and live projects.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">VIEW PROJECTS <span>→</span></a>
+          <a class="button button-secondary" data-link="linktree" href="https://linktr.ee/mikedenman" target="_blank" rel="noopener noreferrer">GET IN TOUCH</a>
+        </div>
+      </div>
+    </section>
 
-<section id="work" class="section">
-  <div class="section-head">
-    <div><p class="eyebrow">01</p><h2>FEATURED WORK</h2></div>
-    <p>Games, campaigns, brands, films, and creative work.</p>
-  </div>
-  <div class="filters" id="filters"></div>
-  <div class="cards" id="projectGrid"></div>
-</section>
+    <section class="content-section" id="projects">
+      <div class="section-heading">
+        <h2>CURRENT PROJECTS</h2>
+        <p>REAL PROJECTS.<br>REAL IMPACT.</p>
+      </div>
+      <div class="projects-list">
+        <a class="project-card" data-link="madvertising" href="https://madvertising.agency/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/mad.png" alt="MADvertising creative artwork">
+          <div class="project-copy"><h3>MADvertising agency</h3><strong>ADVERTISING AND MARKETING CONSULTANT</strong><p>Advertising and marketing with a focus on Meta, Instagram, Facebook, Reddit, Pinterest, Google, YouTube, LinkedIn, and CTV.</p></div>
+          <span class="project-arrow">›</span>
+        </a>
+        <a class="project-card" data-link="betterThanAwesome" href="https://betterthanawesome.com/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/bta.png" alt="Better Than Awesome project artwork">
+          <div class="project-copy"><h3>Better Than Awesome</h3><strong>THE BEST PRODUCTS AROUND</strong><p>Curated gear, creative products, and the most interesting robots right now.</p></div>
+          <span class="project-arrow">›</span>
+        </a>
+        <a class="project-card" data-link="beton" href="https://betonstreetwear.com/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/beton.png" alt="BéTON streetwear artwork">
+          <div class="project-copy"><h3>BéTON Streetwear</h3><strong>BUY CLOTHING / WEARABLE ART / STREETWEAR</strong><p>Original designs. Limited drops. More than clothing.</p></div>
+          <span class="project-arrow">›</span>
+        </a>
+        <a class="project-card" data-link="strAdvertising" href="https://stradvertising.com/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/str.png" alt="Short term rental property artwork">
+          <div class="project-copy"><h3>STRadvertising</h3><strong>SHORT TERM RENTAL ADVERTISING</strong><p>Educational information and advertising strategy for Airbnbs, vacation rentals, and other accommodations.</p></div>
+          <span class="project-arrow">›</span>
+        </a>
+        <a class="project-card" data-link="skinAMaxx" href="https://skin-a-maxx.com/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/skin.png" alt="Skin A Maxx projected light artwork">
+          <div class="project-copy"><h3>Skin-A-Maxx</h3><strong>PHOTO BOOTH! & ART! <span class="nsfw">NSFW</span></strong><p>A provocative and imaginative visual experience exploring the human form, light, cinema, and distortion.</p></div>
+          <span class="project-arrow">›</span>
+        </a>
+      </div>
+    </section>
 
-<section id="media" class="section">
-  <div class="section-head">
-    <div><p class="eyebrow">02</p><h2>VIDEOS</h2></div>
-    <p>Selected surviving work from the archive.</p>
-  </div>
-  <div class="media-list">
-    <a class="media-row" href="https://vimeo.com/66353825" target="_blank" rel="noreferrer"><span class="media-icon">▶</span><span><strong>Old Reel</strong><small>Video archive</small></span><span class="arrow">›</span></a>
-    <a class="media-row" href="https://youtu.be/SxKHV8ZpdVk" target="_blank" rel="noreferrer"><span class="media-icon">▶</span><span><strong>The Glider Rig Origin Story</strong><small>Gotham City Impostors · WB Games</small></span><span class="arrow">›</span></a>
-    <a class="media-row" href="https://youtu.be/vNncDSK432A" target="_blank" rel="noreferrer"><span class="media-icon">▶</span><span><strong>Under Covers</strong><small>Short film</small></span><span class="arrow">›</span></a>
-    <a class="media-row" href="https://youtu.be/fnqgHRzEJlw" target="_blank" rel="noreferrer"><span class="media-icon">▶</span><span><strong>What Is SEO?</strong><small>Stop-motion explainer · Altitude Agency</small></span><span class="arrow">›</span></a>
-    <div class="media-row unavailable"><span class="media-icon">×</span><span><strong>Quiet Please</strong><small>Music video · original upload currently missing</small></span><span class="arrow">ARCHIVE HUNT</span></div>
-  </div>
-</section>
+    <section class="content-section compact" id="follow">
+      <div class="section-heading">
+        <h2>FOLLOW ME</h2>
+        <p>SAME PLACES. MORE CREATIVITY.</p>
+      </div>
+      <div class="card-grid follow-grid">
+        <a class="mini-card" data-link="linkedin" href="https://www.linkedin.com/in/mikedenman" target="_blank" rel="noopener noreferrer">
+          <span class="icon-box icon-cyan">in</span><div><h3>LinkedIn</h3><p>Let's connect</p></div>
+        </a>
+        <a class="mini-card" data-link="instagram" href="https://www.instagram.com/mikedevius/" target="_blank" rel="noopener noreferrer">
+          <span class="icon-box icon-pink">◎</span><div><h3>Instagram</h3><p>@mikedevius</p></div>
+        </a>
+        <a class="mini-card" href="#projects">
+          <span class="icon-box icon-pink">♟</span><div><h3>Clothing & wearable art</h3><p>Skin-A-Maxx and BéTON</p></div>
+        </a>
+      </div>
+    </section>
 
-<section id="other" class="section">
-  <div class="section-head">
-    <div><p class="eyebrow">03</p><h2>OTHER FORMS</h2></div>
-    <p>Creative work does not need to fit one medium.</p>
-  </div>
-  <div class="compact-grid">
-    <article><span class="glyph">▤</span><h3>Books</h3><p>AI Art Genesis</p><p>How to Excel at Short Term Rental Advertising</p></article>
-    <article><span class="glyph">◉</span><h3>Art + Clothing</h3><p><a href="https://skin-a-maxx.com" target="_blank" rel="noreferrer">Skin-A-Maxx</a></p><p><a href="https://betonstreetwear.com" target="_blank" rel="noreferrer">béTON</a></p></article>
-    <article><span class="glyph">◍</span><h3>Live + Appearances</h3><p>Exposed Storytelling</p><p>Podcast guest archive</p></article>
-    <article><span class="glyph">▥</span><h3>Brands</h3><p><a href="https://madvertising.agency" target="_blank" rel="noreferrer">MADvertising</a></p><p><a href="https://betterthanawesome.com" target="_blank" rel="noreferrer">Better Than Awesome</a></p></article>
-  </div>
-</section>
+    <section class="content-section compact" id="books">
+      <div class="section-heading">
+        <h2>BOOKS & AUDIO</h2>
+        <p>IDEAS IN MORE FORMATS.</p>
+      </div>
+      <div class="card-grid books-grid">
+        <a class="book-card" data-link="aiArtGenesis" href="https://business.walmart.com/ip/Ai-Art-Genesis-an-AiRTful-look-at-the-book-of-Genesis-Paperback-9798874169930/5326569112" target="_blank" rel="noopener noreferrer">
+          <img src="assets/ai.png" alt="AI Art Genesis book artwork"><div><h3>AI Art Genesis</h3><p>ART / AI / FUTURE</p></div>
+        </a>
+        <a class="book-card" data-link="madAudiobooks" href="https://www.madaudiobooks.com/" target="_blank" rel="noopener noreferrer">
+          <span class="book-icon">◉</span><div><h3>MAD Audio Books</h3><p>MAGPIE AUDIO DEN</p></div>
+        </a>
+        <a class="book-card" data-link="madvertising" href="https://madvertising.agency/" target="_blank" rel="noopener noreferrer">
+          <span class="book-icon">▤</span><div><h3>Author Marketing</h3><p>TOOLS / STRATEGY</p></div>
+        </a>
+        <a class="book-card" data-link="madvertising" href="https://madvertising.agency/" target="_blank" rel="noopener noreferrer">
+          <span class="book-icon">◍</span><div><h3>Book & Audiobook Advertising</h3><p>REACH MORE READERS</p></div>
+        </a>
+      </div>
+    </section>
 
-<section class="proof section">
-  <div class="proof-item"><strong>$370 → $24</strong><span>Perry Homes Meta CPL</span></div>
-  <div class="proof-item"><strong>$1.6M</strong><span>VARI attributed revenue on $98K spend</span></div>
-  <div class="proof-item"><strong>30M+</strong><span>documented reach across WB game campaigns</span></div>
-</section>
+    <section class="content-section compact" id="experience">
+      <div class="section-heading">
+        <h2>EXPERIENCE</h2>
+        <p>DIFFERENT MEDIUMS. SAME CREATIVE DRIVE.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card"><span>🎮</span><h3>Video Game Marketing</h3><p>AT WB GAMES</p></article>
+        <article class="experience-card"><span>🏆</span><h3>BAFTA Winning Work</h3><p>FILM / GAMES</p></article>
+        <article class="experience-card"><span>🎓</span><h3>Graduated Film School</h3><p>WITH HONORS IN SEATTLE</p></article>
+        <article class="experience-card"><span>🎬</span><h3>Film, Video, Creative Direction</h3><p>STORY / PRODUCTION</p></article>
+        <article class="experience-card"><span>👥</span><h3>Team Awesome</h3><p>FILM / PRODUCTION</p></article>
+        <article class="experience-card"><span>⌂</span><h3>Real Estate Advertising</h3><p>SHORT TERM RENTALS</p></article>
+      </div>
+    </section>
 
-<section id="contact" class="contact section">
-  <p class="eyebrow">04</p>
-  <h2>LET'S BUILD SOMETHING MEANINGFUL.</h2>
-  <p>Available for advertising strategy, paid media, creative consulting, video, launch support, and select collaborations.</p>
-  <div class="actions">
-    <a class="button pink" href="mailto:MikeDFilms@gmail.com?subject=MikeDenman.online inquiry">EMAIL MIKE</a>
-    <a class="button cyan" href="https://linktr.ee/mikedenman" target="_blank" rel="noreferrer">VIEW LINKS</a>
-  </div>
-</section>
-</main>
+    <section class="content-section compact" id="clients">
+      <div class="section-heading">
+        <h2>PAST CLIENTS</h2>
+        <p>GREAT COMPANIES. AMAZING PROJECTS.</p>
+      </div>
+      <div class="clients-grid">
+        <a href="https://www.schellgames.com/" target="_blank" rel="noopener noreferrer">SCHELL GAMES</a>
+        <a data-link="avalanche" href="https://www.avalanchestudios.com/" target="_blank" rel="noopener noreferrer">AVALANCHE</a>
+        <div>GAMBIT</div>
+        <a data-link="wbGames" href="https://www.warnerbrosgames.com/" target="_blank" rel="noopener noreferrer">MONOLITH</a>
+        <a data-link="rogueInitiative" href="https://www.rogueinitiative.com/" target="_blank" rel="noopener noreferrer">ROGUE INITIATIVE</a>
+        <a data-link="wbGames" href="https://www.warnerbrosgames.com/" target="_blank" rel="noopener noreferrer">WB GAMES</a>
+        <div>MOLECULAR JIG</div>
+        <a data-link="snowblind" href="https://en.wikipedia.org/wiki/Snowblind_Studios" target="_blank" rel="noopener noreferrer">SNOWBLIND</a>
+      </div>
+    </section>
 
-<footer>
-  <span>MIKEDENMAN.ONLINE</span>
-  <span>Stories leave a mark.</span>
-  <span><a href="https://www.linkedin.com/in/mikedenman" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://linktr.ee/mikedenman" target="_blank" rel="noreferrer">All Links</a></span>
-</footer>
+    <section class="final-cta">
+      <div class="final-cta-art" aria-hidden="true"></div>
+      <p>LET'S MAKE SOMETHING<br>MEANINGFUL.</p>
+      <a class="button button-primary" data-link="linktree" href="https://linktr.ee/mikedenman" target="_blank" rel="noopener noreferrer">GET IN TOUCH <span>→</span></a>
+      <div class="footer-socials" aria-label="Social links">
+        <a data-link="linktree" href="https://linktr.ee/mikedenman" target="_blank" rel="noopener noreferrer" aria-label="Contact">✉</a>
+        <a data-link="instagram" href="https://www.instagram.com/mikedevius/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+        <a data-link="linkedin" href="https://www.linkedin.com/in/mikedenman" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+        <a data-link="youtube" href="https://www.youtube.com/results?search_query=Mike+Denman+film+marketing" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+      </div>
+      <small>© 2026 MIKE DENMAN. ALL HUMAN. ALL CREATIVE.</small>
+    </section>
+  </main>
 
-<aside class="customizer" id="customizer" aria-hidden="true">
-  <div class="customizer-head"><strong>THEME</strong><button id="customizeClose">CLOSE</button></div>
-  <label>Pink <input type="color" id="pinkColor" value="#ff2baa"></label>
-  <label>Cyan <input type="color" id="cyanColor" value="#37ecff"></label>
-  <label>Background <input type="color" id="bgColor" value="#050407"></label>
-  <label>Scanlines <input type="checkbox" id="scanlinesToggle" checked></label>
-  <button id="resetTheme" class="button pink small">RESET</button>
-  <p>These choices save in this browser. We can later connect them to Cloudflare so your saved theme becomes public for everyone.</p>
-</aside>
-
-<script src="/sky.js"></script>
-<script src="/app.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mike Denman",
+    "url": "https://mikedenman.online/",
+    "jobTitle": "Filmmaker, Marketer, and Creative Strategist",
+    "sameAs": [
+      "https://www.linkedin.com/in/mikedenman",
+      "https://www.instagram.com/mikedevius/",
+      "https://linktr.ee/mikedenman"
+    ]
+  }
+  </script>
 </body>
 </html>
